@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import ShowAllThisMonth from './PRIDEWall/showAll';
+import HomePage from './Homepage';
 
-ReactDOM.render(<ShowAllThisMonth />, document.getElementById('root'));
+ReactDOM.render(<HomePage/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
