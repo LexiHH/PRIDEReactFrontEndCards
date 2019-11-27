@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class ShowAllThisMonth extends Component {
+export default class ShowAllThisEmployee extends Component {
   constructor() {
     super()
     this.state = {
@@ -9,7 +9,7 @@ export default class ShowAllThisMonth extends Component {
   }
 
     componentDidMount=()=> {
-    fetch('http://localhost:8000/findAllCardsThisMonth')
+    fetch('http://localhost:8000/findAllCardsThisEmployee/P430221')
         .then(response => response.json())
         .then(data => {
           this.setState({
@@ -22,7 +22,7 @@ export default class ShowAllThisMonth extends Component {
         return(
             <div>
                 <div>
-                    <h1>This Month's PRIDE Cards</h1>
+                    <h1>Your PRIDE Cards</h1>
                 </div>
                 <table style={{textAlign:'center'}}>
                     <tbody>
